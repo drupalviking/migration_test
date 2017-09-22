@@ -1,4 +1,4 @@
-drupal module:install admin_toolbar
+drupal module:install admin_toolbar_tools
 drupal module:install module_filter
 drupal module:install pathauto
 drupal module:install metatag
@@ -22,9 +22,6 @@ drupal module:install panels
 drupal module:install page_manager
 drupal module:install honeypot
 drupal module:install better_exposed_filters
-drupal module:install slick
-drupal module:install slick_media
-drupal module:install dropzonejs
 drupal module:install coffee
 drupal module:install file_browser
 drupal module:install entity_browser_enhanced
