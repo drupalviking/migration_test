@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0bbff7aaa3e7c9bc8a699604ddd2eae",
+    "content-hash": "78593a0b6944dd382f87f213d8ec3d02",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2418,6 +2418,65 @@
             }
         },
         {
+            "name": "drupal/dynamic_entity_reference",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dynamic_entity_reference",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "815831e4d9d23cf6ebd989d58059e10caadef782"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1501151042",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lee Rowlands",
+                    "homepage": "https://www.drupal.org/u/larowlan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jibran Ijaz",
+                    "homepage": "https://www.drupal.org/u/jibran",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a field that allows an entity-reference field to reference more than one entity type.",
+            "homepage": "http://drupal.org/project/dynamic_entity_reference",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dynamic_entity_reference",
+                "issues": "http://drupal.org/project/dynamic_entity_reference",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/embed",
             "version": "1.0.0",
             "source": {
@@ -3969,6 +4028,70 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/redirect"
             }
+        },
+        {
+            "name": "drupal/relation",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/relation",
+                "reference": "e93d8148549f263ed8eb90a16046d1fccb5c3764"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/dynamic_entity_reference": "^1.0"
+            },
+            "require-dev": {
+                "drupal/dynamic_entity_reference": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1481827083",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/976150/committers"
+                },
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                },
+                {
+                    "name": "mikran",
+                    "homepage": "https://www.drupal.org/user/1004738"
+                },
+                {
+                    "name": "naught101",
+                    "homepage": "https://www.drupal.org/user/44216"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Describes relationships between entities.",
+            "homepage": "https://www.drupal.org/project/relation",
+            "support": {
+                "source": "http://git.drupal.org/project/relation.git",
+                "error": "Invalid dependency: \"relation_ui\" is an unknown drupal 8 package name",
+                "issues": "https://www.drupal.org/project/issues/relation"
+            },
+            "time": "2016-12-15 18:21:42"
         },
         {
             "name": "drupal/search_api",
@@ -8792,7 +8915,8 @@
         "drupal/inline_entity_form": 10,
         "drupal/libraries": 20,
         "drupal/page_manager": 10,
-        "drupal/redirect": 10
+        "drupal/redirect": 10,
+        "drupal/relation": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

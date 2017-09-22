@@ -19,6 +19,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -62,6 +63,7 @@ module:
   rdf: 0
   recaptcha: 0
   redirect: 0
+  relation: 0
   search: 0
   search_api: 0
   shortcut: 0
