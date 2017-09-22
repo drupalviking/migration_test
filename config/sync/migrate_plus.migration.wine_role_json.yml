@@ -1,0 +1,37 @@
+uuid: 7e59e232-36e3-4624-a49a-3f8288bea996
+langcode: is
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_example_advanced
+_core:
+  default_config_hash: 5sZmsXx2NHgoGZS_VYyKQZt4FtEcPMDKMyIj23N2H4s
+id: wine_role_json
+migration_tags: null
+migration_group: wine
+label: 'JSON feed of roles (positions)'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: 'http://default/migrate_example_advanced_position?_format=json'
+  item_selector: 1
+  fields:
+    -
+      name: machine_name
+      label: 'Unique position identifier'
+      selector: sourceid
+    -
+      name: friendly_name
+      label: 'Position name'
+      selector: name
+  ids:
+    machine_name:
+      type: string
+process:
+  id: machine_name
+  label: friendly_name
+destination:
+  plugin: 'entity:user_role'
+migration_dependencies: {  }
