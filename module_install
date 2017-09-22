@@ -26,3 +26,4 @@ drupal module:install coffee
 drupal module:install file_browser
 drupal module:install entity_browser_enhanced
 drupal module:install content_browser
+drupal module:install migrate_drupal_ui
