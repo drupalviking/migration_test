@@ -1,0 +1,11 @@
+uuid: 7cc45a76-34b2-43d0-8083-3c1f04ce3e47
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: 'Á ekki við'
+direction: ltr
+weight: 3
+locked: true

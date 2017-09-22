@@ -1,0 +1,8 @@
+uuid: 858ba41b-39f3-4c5a-9a4d-a1210f3743da
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
+id: default
+label: Sjálfgefið

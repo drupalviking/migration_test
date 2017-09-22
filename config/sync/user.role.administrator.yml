@@ -1,0 +1,11 @@
+uuid: e65b1c4b-201f-41c3-a957-73df8c04f366
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
+id: administrator
+label: Kerfisstjóri
+weight: 2
+is_admin: true
+permissions: {  }

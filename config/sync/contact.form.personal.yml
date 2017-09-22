@@ -1,0 +1,13 @@
+uuid: 1e3e503f-bde9-4f62-a6a7-29ee35286a3e
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Hafa samband'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Skilaboð þín hafa verið send.'
+redirect: ''

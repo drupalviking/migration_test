@@ -1,0 +1,14 @@
+uuid: da50bcd6-7a1a-4429-a7a8-347f93ead11e
+langcode: is
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: Notendur
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

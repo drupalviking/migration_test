@@ -1,0 +1,11 @@
+uuid: f9502a6f-f652-43ad-8936-dd6660149e52
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+name: Efnisorð
+vid: tags
+description: 'Use tags to group articles on similar topics into categories.'
+hierarchy: 0
+weight: 0

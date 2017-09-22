@@ -1,0 +1,14 @@
+uuid: 1de4422b-7032-43cf-b67f-193a4e70e74d
+langcode: is
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - drupalviking@gmail.com
+reply: ''
+weight: 0
+message: 'Skilaboð þín hafa verið send.'
+redirect: ''
