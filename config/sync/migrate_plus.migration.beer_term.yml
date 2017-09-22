@@ -1,0 +1,28 @@
+uuid: 37202bb8-7b5a-4910-87ad-22f3dd867ef6
+langcode: is
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_example
+_core:
+  default_config_hash: QtcxiY4eicnXwwGW4UKAx7_w1PP8QJDGJ__mlAZGJzA
+id: beer_term
+migration_tags: null
+migration_group: beer
+label: 'Migrate style categories from the source database to taxonomy terms'
+source:
+  plugin: beer_term
+process:
+  name: style
+  description: details
+  vid:
+    plugin: default_value
+    default_value: migrate_example_beer_styles
+  parent:
+    plugin: migration
+    migration: beer_term
+    source: style_parent
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: {  }

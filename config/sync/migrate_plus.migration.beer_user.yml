@@ -1,0 +1,50 @@
+uuid: 31618e93-3f31-4176-9b4d-42b5e6897a50
+langcode: is
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_example
+_core:
+  default_config_hash: xklWu7xVQAFXg9yPsi4eaGtIc08wm610fTc_tb5iKQE
+id: beer_user
+migration_tags: null
+migration_group: beer
+label: 'Beer Drinkers of the world'
+source:
+  plugin: beer_user
+process:
+  pass: password
+  mail: email
+  init: email
+  status: status
+  roles:
+    plugin: default_value
+    default_value: 2
+  name:
+    plugin: dedupe_entity
+    source: username
+    entity_type: user
+    field: name
+    postfix: _
+  created:
+    plugin: callback
+    source: registered
+    callable: strtotime
+  changed: '@created'
+  access: '@created'
+  login: '@created'
+  field_migrate_example_gender:
+    plugin: static_map
+    source: sex
+    map:
+      - Male
+      - Female
+    bypass: true
+  field_migrate_example_favbeers:
+    plugin: migration
+    source: beers
+    migration: beer_node
+destination:
+  plugin: 'entity:user'
+migration_dependencies: {  }
